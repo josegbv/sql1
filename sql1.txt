@@ -1,4 +1,4 @@
-Solución:
+Solución 1:
 
 CREATE TABLE CURSO (codigo integer PRIMARY KEY, nombre varchar NOT NULL, descripcion varchar, turno varchar)
 
@@ -15,3 +15,19 @@ INSERT into CURSO VALUES  (102, "FISICA", “”,”MAÑANA”,21);
 UPDATE CURSO SET cupo = 25;
 
 DELETE FROM CURSO WHERE nombre = " Algoritmos"
+
+
+
+Solución 2
+
+A) SELECT nombre, apellido,fecha_nacimiento FROM profesor p ORDER BY p.fecha_nacimiento ASC
+
+B) SELECT nombre, apellido FROM profesor WHERE salario >= 65000
+
+C) SELECT nombre,apellido FROM profesor WHERE fecha_nacimiento BETWEEN '01-01-1980' and '31-12-1989'
+
+D) SELECT TOP 5 * FROM profesor;
+
+E) SELECT nombre, apellido FROM profesor WHERE substring(apellido,1,1)='P'
+
+F) SELECT nombre,apellido FROM profesor WHERE fecha_nacimiento BETWEEN '01-01-1980' and '31-12-1989' AND salario > 80000
